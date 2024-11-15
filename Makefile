@@ -1,3 +1,15 @@
+#******************************************************************************#
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: ablabib <ablabib@student.42.fr>            +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2024/11/15 15:33:50 by ablabib           #+#    #+#              #
+#    Updated: 2024/11/15 15:33:57 by ablabib          ###   ########.fr        #
+#                                                                              #
+#******************************************************************************#
+
 NAME = libftprintf.a
 SRCS = ft_printf.c ft_printc.c ft_printd.c ft_prints.c ft_printp.c \
 			ft_printx.c ft_printu.c

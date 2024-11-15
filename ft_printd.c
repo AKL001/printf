@@ -1,11 +1,23 @@
+/******************************************************************************/
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_printd.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ablabib <ablabib@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/11/15 15:32:42 by ablabib           #+#    #+#             */
+/*   Updated: 2024/11/15 15:32:47 by ablabib          ###   ########.fr       */
+/*                                                                            */
+/******************************************************************************/
+
 #include "ft_printf.h"
 
 int	ft_printd(int n)
 {
-	int	digit;
-    int count;
+	int digit;
+	int count;
 
-    count = 0;
+	count = 0;
 	if (n == -2147483648)
 		count += write(1, "-2147483648", 11);
 	else if (n < 0)
@@ -27,5 +39,5 @@ int	ft_printd(int n)
 			count += write(1, &digit, 1);
 		}
 	}
-    return count;
+	return (count);
 }

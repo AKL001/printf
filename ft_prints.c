@@ -14,14 +14,15 @@
 
 int	ft_prints(char *s)
 {
-	int	i;
+	int	count;
 
-	i = 0;
+	count = 0;
+	if (!s)
+		return (ft_prints("(null)"));
 	while (*s)
 	{
-		ft_printc(*s);
+		count += ft_printc(*s);
 		s++;
-		i++;
 	}
-	return (i);
+	return (count);
 }

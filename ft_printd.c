@@ -12,28 +12,20 @@
 
 #include "ft_printf.h"
 
-int	ft_printd(int n)
+int	ft_printd(int nb)
 {
-	int	count;
+	long	nbr;
+	int		len;
 
-	count = 0;
-	if (n == -2147483648)
-		count += write(1, "-2147483648", 11);
-	else if (n < 0)
+	len = 0;
+	nbr = nb;
+	if (nbr < 0)
 	{
-		count += write(1, "-", 1);
-		n = -n;
-		count += ft_printd(n);
+		len += ft_printc('-');
+		nbr = nbr * -1;
 	}
-	else
-	{
-		if (n > 9)
-		{
-			count += ft_printd(n / 10);
-			count += ft_printd(n % 10);
-		}
-		else
-			count += write(1, &n + '0', 1);
-	}
-	return (count);
+	if (nbr > 9)
+		len += ft_printd(nbr / 10);
+	len += ft_printc(nbr % 10 + '0');
+	return (len);
 }

@@ -30,10 +30,7 @@ int	print_format(char c, va_list ap)
 	else if (c == 'x' || c == 'X')
 		count += ft_printx(va_arg(ap, unsigned int), c);
 	else
-	{
-		count += write(1, "%", 1);
 		count += write(1, &c, 1);
-	}
 	return (count);
 }
 

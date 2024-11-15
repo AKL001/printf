@@ -7,4 +7,5 @@ int ft_printp(unsigned long nbr)
     count = 0;
     count += write(1, "0x",2);
     count += ft_printx(nbr , 'x');
+    return count;
 }

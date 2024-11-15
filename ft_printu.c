@@ -7,5 +7,6 @@ int ft_printu(unsigned int nbr)
     count = 0;
     if (nbr > 9)
         count += ft_printu(nbr / 10);
-    count += ft_printc(nbr + '0');
+    count += ft_printc(nbr % 10 + '0');
+    return count;
 }

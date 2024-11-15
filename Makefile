@@ -27,30 +27,3 @@ fclean: clean
 re: fclean all
 
 .PHONY: all bonus clean fclean re
-
-# NAME	= libftprintf.a
-# SRCS=    ft_print.c ft_printc.c ft_printd.c ft_prints.c ft_printp.c \
-# 			ft_printx.c ft_printu.c
-
-# OBJS	= ${SRCS:%.c=%.o}
-
-# FLAGS	= -Wall -Wextra -Werror
-
-# HEADER	= ft_printf.h
-
-# all: $(NAME) 
-
-# $(NAME): $(OBJS)
-# 	gcc $(FLAGS) -c $(SRCS) -I ./
-# 	ar rc $(NAME) $(OBJS)
-
-# %.o: %.c $(HEADER)
-# 	$(CC) -c $(CFLAGS) $<
-
-# clean:
-# 	rm -rf $(OBJS)
-
-# fclean: clean
-# 	rm -rf $(NAME)
-
-# re: fclean all

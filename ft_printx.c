@@ -1,6 +1,6 @@
 #include "ft_printf.h"
 
-int ft_printx(unsigned int nbr,char c)
+int ft_printx(unsigned long nbr,char c)
 {
     int count;
 

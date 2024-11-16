@@ -6,11 +6,12 @@
 /*   By: ablabib <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/15 15:57:28 by ablabib           #+#    #+#             */
-/*   Updated: 2024/11/15 15:57:29 by ablabib          ###   ########.fr       */
+/*   Updated: 2024/11/16 19:02:05 by ablabib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
+#include <unistd.h>
 
 int	print_format(char c, va_list ap)
 {
@@ -39,6 +40,8 @@ int	ft_printf(const char *format, ...)
 	va_list	ap;
 	int		count;
 
+	if (!format || write(1, 0, 0) == -1)
+		return (-1);
 	va_start(ap, format);
 	count = 0;
 	while (*format)

@@ -1,4 +1,4 @@
-# 🎉 `ft_printf` - A Custom `printf` Implementation 🎉  
+# 🎉 `ft_printf` - A Custom `printf` Implementation  
 
 Welcome to **`ft_printf`**, a meticulously crafted implementation of the famous C standard library function, `printf`. Built as part of the 42 Network curriculum! 🌟  
 
